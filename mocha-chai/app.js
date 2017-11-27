@@ -9,7 +9,7 @@ var index = require('./routes/index');
 var books = require('./routes/book');
 
 var app = express();
-
+require('./db/db.js')
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
